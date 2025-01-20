@@ -13,42 +13,39 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      body {
-        font-family: "Roboto", sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body class="bg-gray-900 text-white">
     <!-- Header Section -->
     <header class="relative">
       <img
         alt="Band members"
-        class="w-full h-screen object-cover"
-        style="object-position: top center; object-fit: cover"
+        class="w-full max-h-screen object-contain"
         src="Assalamualaikum everyone.jpg"
       />
-      <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-between">
+
+      <div
+        class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-between"
+      >
         <div class="flex justify-between items-center p-4 md:p-6">
           <!-- Logo -->
           <div class="flex items-center space-x-2">
-            <div class="w-10 h-10 bg-pink-500 rounded-full"></div>
-            <h1 class="text-2xl md:text-3xl font-bold">KALATAWA</h1>
+            <img src="logo-remove.png" alt="KALATAWA Logo" class="w-10 h-10 rounded-full" />
+            <h1 class="text-pink-500 text-2xl md:text-3xl font-bold">KALATAWA</h1>
           </div>
           <!-- Navigation -->
           <nav>
             <ul class="hidden md:flex space-x-6 text-lg">
-              <li><a class="text-pink-500 hover:text-white" href="#">Home</a></li>
-              <li><a href="#" class="hover:text-pink-500">Albums</a></li>
-              <li><a href="#" class="hover:text-pink-500">Artists</a></li>
-              <li><a href="#" class="hover:text-pink-500">Contact</a></li>
+              <li>
+                <a class="text-pink-500 hover:text-white" href="#">Home</a>
+              </li>
+              <li><a href="#album" class="hover:text-pink-500">Albums</a></li>
+              <li><a href="#artists" class="hover:text-pink-500">Artists</a></li>
+              <li><a href="#contact" class="hover:text-pink-500">Contact</a></li>
             </ul>
           </nav>
           <!-- Hamburger Menu -->
-          <button
-            class="md:hidden text-white text-2xl"
-            id="menu-toggle"
-          >
+          <button class="md:hidden text-white text-2xl" id="menu-toggle">
             <i class="fas fa-bars"></i>
           </button>
         </div>
@@ -59,9 +56,9 @@
         >
           <ul class="space-y-4">
             <li><a class="text-pink-500 hover:text-white" href="#">Home</a></li>
-            <li><a href="#" class="hover:text-pink-500">Albums</a></li>
-            <li><a href="#" class="hover:text-pink-500">Artists</a></li>
-            <li><a href="#" class="hover:text-pink-500">Contact</a></li>
+            <li><a href="#album" class="hover:text-pink-500">Albums</a></li>
+            <li><a href="#artists" class="hover:text-pink-500">Artists</a></li>
+            <li><a href="#contact" class="hover:text-pink-500">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -82,10 +79,34 @@
             </div>
           </div>
           <div class="md:w-1/2 md:pl-8">
-            <h3 class="text-3xl md:text-4xl font-bold mb-4">Satria As Guitar Player</h3>
+            <h3 class="text-3xl md:text-4xl font-bold mb-4">
+              <span>Satria</span> As Guitar Player
+            </h3>
             <p class="text-lg">
-              Sometimes, if we are very fortunate, the music gods bless us with
-              the perfect band at the perfect time in our lives.
+              Senar gitarku berbicara lebih lantang daripada kata-kata. Di
+              setiap petikan, ada cerita yang ingin kusampaikan.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center mb-12">
+          <div class="md:w-1/2 mb-6 md:mb-0">
+            <div class="border-4 border-pink-500 p-2">
+              <img
+                alt="keyboard player performing on stage"
+                class="w-full h-auto rounded-lg"
+                src="enji.jpg"
+              />
+            </div>
+          </div>
+          <div class="md:w-1/2 md:pl-8">
+            <h3 class="text-3xl md:text-4xl font-bold mb-4">
+              <span>Enji</span> As Keyboard Player
+            </h3>
+            <p class="text-lg">
+              Di setiap tuts piano, ada dunia kecil yang menunggu untuk
+              dijelajahi. Aku tidak hanya memainkan musik, aku menciptakan
+              keajaiban.
             </p>
           </div>
         </div>
@@ -96,15 +117,17 @@
               <img
                 alt="Guitar player performing on stage"
                 class="w-full h-auto rounded-lg"
-                src="guitar.JPG"
+                src="drummer.jpg"
               />
             </div>
           </div>
           <div class="md:w-1/2 md:pl-8">
-            <h3 class="text-3xl md:text-4xl font-bold mb-4">Satria As Guitar Player</h3>
+            <h3 class="text-3xl md:text-4xl font-bold mb-4">
+             <span>Sigit</span>  As Drummer
+            </h3>
             <p class="text-lg">
-              Sometimes, if we are very fortunate, the music gods bless us with
-              the perfect band at the perfect time in our lives.
+              Aku tidak hanya memukul drum, aku menyalakan api ritme. Setiap
+              pukulan adalah kekuatan hidup musik.
             </p>
           </div>
         </div>
@@ -115,15 +138,18 @@
               <img
                 alt="Guitar player performing on stage"
                 class="w-full h-auto rounded-lg"
-                src="guitar.JPG"
+                src="bass.jpg"
               />
             </div>
           </div>
           <div class="md:w-1/2 md:pl-8">
-            <h3 class="text-3xl md:text-4xl font-bold mb-4">Satria As Guitar Player</h3>
+            <h3 class="text-3xl md:text-4xl font-bold mb-4">
+             <span>Sahrul</span>  As Bassist
+            </h3>
             <p class="text-lg">
-              Sometimes, if we are very fortunate, the music gods bless us with
-              the perfect band at the perfect time in our lives.
+              Aku adalah bayangan yang tak terlihat tapi selalu terasa. Setiap
+              dentingan bass adalah jiwa yang mengisi ruang kosong dalam
+              harmoni.
             </p>
           </div>
         </div>
@@ -134,15 +160,17 @@
               <img
                 alt="Guitar player performing on stage"
                 class="w-full h-auto rounded-lg"
-                src="guitar.JPG"
+                src="vokalis.jpeg"
               />
             </div>
           </div>
           <div class="md:w-1/2 md:pl-8">
-            <h3 class="text-3xl md:text-4xl font-bold mb-4">Satria As Guitar Player</h3>
+            <h3 class="text-3xl md:text-4xl font-bold mb-4">
+              <span>Alief Pasha</span> As Vokalis
+            </h3>
             <p class="text-lg">
-              Sometimes, if we are very fortunate, the music gods bless us with
-              the perfect band at the perfect time in our lives.
+              Suaraku adalah jembatan antara hati dan melodi. Aku bernyanyi
+              bukan hanya untuk didengar, tapi untuk dirasakan.
             </p>
           </div>
         </div>
@@ -153,50 +181,32 @@
               <img
                 alt="Guitar player performing on stage"
                 class="w-full h-auto rounded-lg"
-                src="guitar.JPG"
+                src="guitar6.jpg"
               />
             </div>
           </div>
           <div class="md:w-1/2 md:pl-8">
-            <h3 class="text-3xl md:text-4xl font-bold mb-4">Satria As Guitar Player</h3>
+            <h3 class="text-3xl md:text-4xl font-bold mb-4">
+              <span>Dendi</span> As Guitar Player
+            </h3>
             <p class="text-lg">
-              Sometimes, if we are very fortunate, the music gods bless us with
-              the perfect band at the perfect time in our lives.
-            </p>
-          </div>
-        </div>
-
-        <div class="flex flex-col md:flex-row items-center mb-12">
-          <div class="md:w-1/2 mb-6 md:mb-0">
-            <div class="border-4 border-pink-500 p-2">
-              <img
-                alt="Guitar player performing on stage"
-                class="w-full h-auto rounded-lg"
-                src="guitar.JPG"
-              />
-            </div>
-          </div>
-          <div class="md:w-1/2 md:pl-8">
-            <h3 class="text-3xl md:text-4xl font-bold mb-4">Satria As Guitar Player</h3>
-            <p class="text-lg">
-              Sometimes, if we are very fortunate, the music gods bless us with
-              the perfect band at the perfect time in our lives.
+              Dalam setiap petikan dan distorsi, aku melukis emosi. Gitarku
+              bukan alat, tapi perpanjangan dari jiwa.
             </p>
           </div>
         </div>
 
         <!-- Albums Section -->
-        <h2 class="text-3xl md:text-4xl font-bold text-center text-pink-500 mb-8">
+         <section id="album" class="py-16">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center text-pink-500 mb-8"
+        >
           Our Albums
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Album 1 -->
           <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg">
-            <img
-              src="pantaskah.jpg"
-              alt="Pantaskah"
-              class="w-full h-auto"
-            />
+            <img src="pantaskah.jpg" alt="Pantaskah" class="w-full h-auto" />
             <div class="p-4">
               <h3 class="text-xl font-bold text-pink-500 mb-2">Pantaskah</h3>
               <p class="text-sm text-gray-300">by KALATAWA</p>
@@ -205,11 +215,7 @@
           </div>
           <!-- Album 2 -->
           <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg">
-            <img
-              src="lagi.jpg"
-              alt="LAGI-LAGI"
-              class="w-full h-auto"
-            />
+            <img src="lagi.jpg" alt="LAGI-LAGI" class="w-full h-auto" />
             <div class="p-4">
               <h3 class="text-xl font-bold text-pink-500 mb-2">Lagi-Lagi</h3>
               <p class="text-sm text-gray-300">by KALATAWA</p>
@@ -218,15 +224,58 @@
           </div>
         </div>
       </div>
+            </section>
     </section>
 
-    <script>
-      const menuToggle = document.getElementById("menu-toggle");
-      const mobileMenu = document.getElementById("mobile-menu");
-
-      menuToggle.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-      });
+    <footer class="bg-gray-900 text-gray-400 py-8">
+      <div class="container mx-auto px-4">
+        <!-- Footer Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- About Section -->
+          <div>
+            <h3 class="text-xl font-bold text-pink-500 mb-4">About us</h3>
+            <p class="text-sm">
+              KALATAWA adalah band yang hadir untuk membawa warna baru dalam dunia musik. Kami menciptakan karya-karya yang menyentuh hati dan menginspirasi banyak orang.
+            </p>
+          </div>
+          
+          <!-- Navigation Links -->
+          <div>
+            <h3 class="text-xl font-bold text-pink-500 mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:text-pink-500">Home</a></li>
+              <li><a href="#about-us" class="hover:text-pink-500">About Us</a></li>
+              <li><a href="#albums" class="hover:text-pink-500">Albums</a></li>
+              <li><a href="#contact" class="hover:text-pink-500">Contact</a></li>
+            </ul>
+          </div>
+          
+          <!-- Contact Section -->
+          <div>
+            <h3 class="text-xl font-bold text-pink-500 mb-4">Contact Us</h3>
+            <p class="text-sm mb-2">Email: <a href="mailto:info@kalatawa.com" class="hover:text-pink-500">kalatawamusik@gmail.com</a></p>
+            <p class="text-sm mb-4">Phone: +62 812-3456-7890</p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-pink-500"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-gray-400 hover:text-pink-500"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/kalatawamusic/" class="text-gray-400 hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/@kalatawamusik" class="text-gray-400 hover:text-pink-500"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="text-center mt-8">
+          <p class="text-sm">
+            &copy; 2025 KALATAWA. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    
+    
+    <script src="script.js">
+     
     </script>
   </body>
 </html>
